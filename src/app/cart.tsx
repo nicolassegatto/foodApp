@@ -55,16 +55,13 @@ export default function Cart() {
     <View className="flex-1 pt-8">
       <Header title="Seu carrinho" />
 
-
-
-
       {cartStore.products.length > 0 ? (
 
         <View className="pt-5 pr-5 pl-5 flex-1">
 
           <KeyboardAvoidingView
             behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-            keyboardVerticalOffset={Platform.OS === 'ios' ? 198 : 126}
+            keyboardVerticalOffset={Platform.OS === 'ios' ? 198 : 198}
             style={{ flex: 1 }}
           >
 
@@ -83,11 +80,11 @@ export default function Cart() {
                 }
               </View>
 
-              
+
             </ScrollView>
 
             <Input className="mt-5" placeholder="Informe o endereço de entrega com rua, bairro, CEP, número e complemento..." onChangeText={setAddress} />
-            
+
             <View className="flex-row gap-2 items-center mt-5 mb-4">
               <Text className="text-white text-xl font-subtitle">Total:</Text>
               <Text className="text-lime-400 text-2xl font-heading">{total}</Text>
@@ -97,10 +94,6 @@ export default function Cart() {
               <Button.Text>Enviar Pedido</Button.Text>
               <Button.Icon><Feather name="arrow-right-circle" size={20} /></Button.Icon>
             </Button>
-
-            <View className="p-5 gap-5">
-              <LinkButton title="Voltar ao cardápio" href="/" />
-            </View>
           </KeyboardAvoidingView>
         </View>
 
@@ -110,7 +103,9 @@ export default function Cart() {
         </Text>
       )}
 
-
+      <View className="p-5 gap-5">
+        <LinkButton title="Voltar ao cardápio" href="/" />
+      </View>
 
     </View>
   )
