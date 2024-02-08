@@ -9,7 +9,6 @@ import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "expo-router";
 import { useState } from "react";
 import { Alert, KeyboardAvoidingView, Linking, Platform, ScrollView, Text, View } from "react-native";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 
 const webHook = "https://webhook.site/c0ddb5d8-60c2-4104-88d4-04c88e063733"
