@@ -64,7 +64,7 @@ export default function Cart() {
 
           <KeyboardAvoidingView
             behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-            keyboardVerticalOffset={Platform.OS === 'ios' ? 198 : -150}
+            keyboardVerticalOffset={Platform.OS === 'ios' ? 198 : 126}
             style={{ flex: 1 }}
           >
 
